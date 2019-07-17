@@ -35,7 +35,6 @@
     "eslintIntegration": false,
     "ignorePath": ".prettierignore",
     "jsxBracketSameLine": false,
-    "parser": "babylon",
     "printWidth": 80,
     "proseWrap": "preserve",
     "requireConfig": false,
@@ -45,8 +44,5 @@
     "tabWidth": 4,
     "trailingComma": "none",
     "useTabs": false
-  },
-  "devDependencies": {
-    "@types/metalsmith": "^2.3.0"
   }
 }
