@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "commit": "npx git-cz"
+    "precommit": "pretty-quick --staged"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   },
   "author": "",
   "license": "ISC",
