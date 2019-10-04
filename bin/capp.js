@@ -5,11 +5,10 @@ const ora = require("ora")
 const rm = require("rimraf").sync
 const fs = require("fs")
 const path = require("path")
-const {generate} = require("../lib/util")
+const { generate } = require("../lib/util")
 
 const root_path = __dirname
 const template_path = path.join(root_path, "../template/")
-
 
 program
     .usage("init <template_name> [project_name]")
@@ -32,9 +31,9 @@ program
     .description("init a new project")
     .action((template_name, project_name) => {
         getLocalTemplate(files => {
-            if(!project_name[0]){
-                console.log("请输入项目名称");
-                return 
+            if (!project_name[0]) {
+                console.log("请输入项目名称")
+                return
             }
             if (files.length === 0) {
                 downloadTemplate(() => {
@@ -86,11 +85,11 @@ function checkGenerate(files, template_name, project_name) {
         listTemplate()
         return
     }
-    const  tmp_path = path.join(template_path,template_name)
-    generate(tmp_path,project_name,(err)=>{
-        if(err){
+    const tmp_path = path.join(template_path, template_name)
+    generate(tmp_path, project_name, err => {
+        if (err) {
             console.log(err)
-            return 
+            return
         }
         console.log("项目搭建成功")
     })
@@ -148,7 +147,7 @@ function downloadTemplate(callbanck) {
         "github:gu091120/my-template#master",
         template_path,
         { clone: false },
-        (e) => {
+        e => {
             sinner.stop()
             if (e) {
                 console.log(chalk.red(e))
