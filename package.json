@@ -5,7 +5,8 @@
   "main": "/bin/capp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "commit": "npx git-cz"
   },
   "author": "",
   "license": "ISC",
@@ -48,5 +49,10 @@
   },
   "devDependencies": {
     "@types/metalsmith": "^2.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
