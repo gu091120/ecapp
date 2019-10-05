@@ -4,13 +4,12 @@
   "description": "",
   "main": "/bin/capp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "changelog": "npm version && conventional-changelog -p angular -i CHANGELOG.md -s -p "
+    "changelog": "npm version patch && conventional-changelog -p angular -i CHANGELOG.md -s -p "
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run changelog && git add . && pretty-quick --staged --pattern '**/*.*(js|jsx)'",
+      "pre-commit": "pretty-quick --staged --pattern '**/*.*(js|jsx)'",
       "prepare-commit-msg": ""
     }
   },
