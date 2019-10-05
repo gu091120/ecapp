@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/gu091120/my-app-cil/compare/v1.0.2...v1.2.0) (2019-10-05)
+
+
+### Features
+
+* ttttt ([6c94136](https://github.com/gu091120/my-app-cil/commit/6c94136))
+
+
+
 # [1.1.0](https://github.com/gu091120/my-app-cil/compare/v1.0.2...v1.1.0) (2019-10-05)
 
 
