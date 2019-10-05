@@ -10,7 +10,8 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "npm run changelog && git add . && exec < /dev/tty && git cz --hook || true "
+      "pre-commit": "pretty-quick --staged --pattern '**/*.*(js|jsx)'",
+      "prepare-commit-msg": "npm run changelog && git add ."
     }
   },
   "author": "",
