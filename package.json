@@ -7,13 +7,6 @@
     "start": "node index.js",
     "changelog": " npm run pacth && conventional-changelog -i CHANGELOG.md -w -p -r 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged --pattern '**/*.*(js|jsx)'",
-      "prepare-commit-msg": "",
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -57,7 +50,6 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@types/metalsmith": "^2.3.0",
-    "husky": "^3.0.8"
   },
   "config": {
     "commitizen": {
