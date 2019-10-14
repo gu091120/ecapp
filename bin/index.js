@@ -21,10 +21,10 @@ program
         console.log("Examples:")
         console.log()
         console.log(chalk.gray("# create a new project"))
-        console.log("$ capp init webpack my-project")
+        console.log("$ ecapp init webpack my-project")
         console.log()
         console.log(chalk.gray("# show template list"))
-        console.log("$ capp list")
+        console.log("$ ecapp list")
         console.log()
     })
 
