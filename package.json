@@ -2,7 +2,7 @@
   "name": "easy_create_app",
   "version": "1.3.0",
   "description": "",
-  "main": "/bin/capp.js",
+  "main": "bin/capp.js",
   "scripts": {
     "start": "node index.js",
     "changelog": " npm run pacth && conventional-changelog -i CHANGELOG.md -w -p -r 0"
