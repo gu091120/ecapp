@@ -1,6 +1,6 @@
 {
-  "name": "ecapp-cli",
-  "version": "1.0.0",
+  "name": "ecapp",
+  "version": "0.0.1",
   "description": "快速创建app的脚手架",
   "main": "bin/ecapp.js",
   "scripts": {
