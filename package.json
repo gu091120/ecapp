@@ -44,9 +44,7 @@
     "trailingComma": "none",
     "useTabs": false
   },
-  "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
-    "@types/metalsmith": "^2.3.0"
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
